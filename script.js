@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'studentHub.tasks';
+const STORAGE_KEY = 'RuangTugas.tasks';
 const API = {
   weather: 'https://api.open-meteo.com/v1/forecast?latitude=-5.36&longitude=105.31&current_weather=true',
   quote: 'https://dummyjson.com/quotes/random',
@@ -205,7 +205,7 @@ class DashboardApp {
     const tick = () => {
       const now = new Date();
       const hour = now.getHours();
-      const sapaan = hour < 11 ? 'Selamat pagi' : hour < 15 ? 'Selamat siang' : hour < 18 ? 'Selamat sore' : 'Selamat malam';
+      let sapaan = hour < 11 ? 'Selamat pagi' : hour < 15 ? 'Selamat siang' : hour < 18 ? 'Selamat sore' : 'Selamat malam';
       this.el.clock.textContent = now.toLocaleTimeString('id-ID');
       this.el.greeting.textContent = `${sapaan}, semangat kuliahnya! 🔥`;
     };
