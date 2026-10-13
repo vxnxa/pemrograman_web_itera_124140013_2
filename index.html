@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Hub ITERA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>📚 Ruang Tugas</h1>
+      <p id="greeting"></p>
+    </div>
+    <div class="clock" id="clock"></div>
+  </header>
+
+  <main class="container">
+    <section class="card widget">
+      <h2>🌤️ Cuaca Kampus</h2>
+      <div id="weather">Memuat cuaca...</div>
+    </section>
+
+    <section class="card widget">
+      <h2>💡 Kutipan Hari Ini</h2>
+      <blockquote id="quote">Memuat kutipan...</blockquote>
+    </section>
+
+    <section class="card full">
+      <h2>➕ Tambah Tugas</h2>
+      <form id="task-form">
+        <input type="text" id="title" placeholder="Judul tugas..." required>
+        <input type="date" id="deadline">
+        <select id="category">
+          <option>Kuliah</option>
+          <option>Praktikum</option>
+          <option>Organisasi</option>
+          <option>Pribadi</option>
+        </select>
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <section class="card full">
+      <div class="list-head">
+        <h2>📝 Daftar Tugas</h2>
+        <select id="filter">
+          <option value="all">Semua</option>
+          <option value="active">Belum Selesai</option>
+          <option value="done">Selesai</option>
+        </select>
+      </div>
+      <div class="stats" id="stats"></div>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
