@@ -1,6 +1,6 @@
 # Ruang Tugas
 
-# Identitas 
+## Identitas 
 - Nama: Sheiryzka Revania Maharani
 - NIM : 124140013
 - Kelas Praktikum : Pengembangan Aplikasi Website RA
@@ -8,7 +8,7 @@
 ## Deskripsi
 Personal dashboard untuk mahasiswa yang menampilkan cuaca,
 kutipan motivasi harian, dan manajemen tugas kuliah. Pengguna bisa menambah,
-mengedit, menghapus, menandai selesai, dan memfilter tugas. Semua data tugas
+mengedit, menghapus, menandai selesai, dangit commit memfilter tugas. Semua data tugas
 disimpan di `localStorage`, sehingga tidak hilang saat halaman di-refresh.
 
 ## Fitur Aplikasi
